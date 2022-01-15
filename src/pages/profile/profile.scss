@@ -1,8 +1,13 @@
 .grid {
   display: grid;
   grid-template-columns: 85rem 30rem;
-  padding: 2rem 13rem;
-  background-color: #f7f9fb;
+  
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+
+.sidebars {
+  margin-left: 4rem;
 }
 
 .user {

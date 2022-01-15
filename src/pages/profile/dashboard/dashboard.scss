@@ -1,0 +1,35 @@
+.dashboard {
+  padding: 2rem;
+
+  & hr {
+    border: 1px solid #f4f4f4;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    & h3 {
+      font-size: 1.2rem;
+    }
+
+    & a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #0275b1;
+    }
+  }
+
+  &__statistics {
+      & h2 {
+        font-size: 5.2rem;
+        color: #0275B1;
+      }
+
+      & p {
+        font-size: 1.4rem;
+      }
+  }
+}

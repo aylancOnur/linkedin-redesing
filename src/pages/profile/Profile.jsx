@@ -11,6 +11,9 @@ import Carousel from "./carousel/Carousel";
 import Skills from "./skills/Skills";
 import Experience from "./experience/Experience";
 import Education from "./education/Education";
+import Dashboard from "./dashboard/Dashboard";
+import Visitors from "./visitors/Visitors";
+import Recomendations from "./recomendations/Recomendations";
 
 const Profile = () => {
   return (
@@ -68,7 +71,11 @@ const Profile = () => {
         <Experience />
         <Education />
       </div>
-      <div className="sidebars"></div>
+      <div className="sidebars">
+        <Dashboard />
+        <Visitors />
+        <Recomendations />
+      </div>
     </div>
   );
 };

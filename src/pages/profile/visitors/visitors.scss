@@ -1,0 +1,47 @@
+.visitors {
+  padding: 2rem;
+
+  & hr {
+    border: 1px solid #f4f4f4;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    & h3 {
+      font-size: 1.2rem;
+    }
+
+    & a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #0275b1;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-top: 2rem;
+      & img {
+          width: 5.2rem;
+          height: auto;
+          margin-right: 1rem;
+      }
+
+      &--content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          & h3 {
+              font-size: 1.4rem;
+          }
+
+          & p {
+              font-size: 1rem;
+          }
+      }
+  }
+}
