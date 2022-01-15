@@ -1,0 +1,32 @@
+.education {
+  padding: 3rem 2rem;
+
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & img {
+    height: 54px;
+    margin-right: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    padding: 2rem 2rem 2rem 0;
+
+    &--content {
+      & h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      & p:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      & p:nth-child(3) {
+        color: #525252;
+      }
+    }
+  }
+}

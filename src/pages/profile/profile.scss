@@ -1,0 +1,142 @@
+.grid {
+  display: grid;
+  grid-template-columns: 85rem 30rem;
+  padding: 2rem 13rem;
+  background-color: #f7f9fb;
+}
+
+.user {
+  &__image {
+    position: relative;
+    z-index: 999;
+    margin-top: -3rem;
+    margin-left: 2rem;
+  }
+  &__background {
+    position: relative;
+    z-index: 1;
+
+    &--image--items {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      & > button {
+        position: relative;
+        margin: 1.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: rgba(113, 123, 133, 0.05) 30px 0px 10px;
+        border-radius: 4px;
+
+        & p {
+          display: inline-block;
+          margin-left: 0.5rem;
+          font-size: 12px;
+        }
+
+        &:nth-child(1) {
+          & img {
+            margin-left: 1rem;
+            display: inline;
+          }
+          width: 132px;
+          height: 36px;
+        }
+
+        &:nth-child(2) {
+          width: 36px;
+          height: 34px;
+          & img {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+
+  &__information {
+    background-color: #ffffff;
+    height: 17rem;
+
+    &--top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--name {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+
+      & img {
+        max-height: 16px;
+        margin-left: 1rem;
+      }
+    }
+
+    &--location {
+      display: flex;
+      align-items: center;
+      width: 20rem;
+      padding: 1rem 2rem;
+      font-size: 12px;
+
+      & img {
+        max-height: 16px;
+        margin-right: 1rem;
+      }
+    }
+
+    &--content {
+      margin-left: 5rem;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    &--buttons {
+      & button {
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        height: 32px;
+        margin-right: 1rem;
+        width: 170px;
+        margin: 2rem 0 2rem 5rem;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+
+        &:nth-child(1) {
+          color: #ffffff;
+          background-color: #0275b1;
+        }
+
+        &:nth-child(2) {
+          color: #0275b1;
+          background-color: transparent;
+          border: 2px solid #0275b1;
+        }
+      }
+    }
+
+    &--container {
+      display: flex;
+
+      &-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+    }
+
+    &--top {
+      margin-left: 3rem;
+    }
+  }
+}
