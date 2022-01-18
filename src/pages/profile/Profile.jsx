@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./profile.scss";
 import backgroundImage from "../../assets/background-image.jpg";
 import miniLogo from "../../assets/miniLogo.png";
@@ -16,6 +17,15 @@ import Visitors from "./visitors/Visitors";
 import Recomendations from "./recomendations/Recomendations";
 
 const Profile = () => {
+  const [tabs] = useState([
+    { id: 1, tabName: "PROFILE" },
+    { id: 2, tabName: "ACTIVITY & INTERESTS" },
+    { id: 3, tabName: "ARTICLES (3)" },
+  ]);
+  const [click, setClick] = useState();
+  const handleClick = (tabId) => {
+    setClick(tabId);
+  };
   return (
     <div className="grid">
       <div className="sections">
@@ -64,7 +74,17 @@ const Profile = () => {
             </div>
           </div>
         </section>
-        <Tabs />
+        <section className="tabs">
+          {tabs.map((tab) => (
+            <Tabs
+              tab={tab}
+              handleClick={handleClick}
+              active={tab.id === click ? "tabs__button active" : "tabs__button"}
+            >
+              {tab.tabName}
+            </Tabs>
+          ))}
+        </section>
         <About />
         <Carousel />
         <Skills />

@@ -46,9 +46,6 @@ img {
   stroke-linejoin: round;
 }
 
-.svg--icon:hover {
-  stroke: #0275B1;
-}
 
 section {
   background-color: #fff;

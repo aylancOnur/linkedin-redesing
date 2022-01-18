@@ -26,11 +26,6 @@
       margin: 1.8rem;
       text-transform: uppercase;
       text-align: center;
-      &:hover {
-        color: #0275b1;
-        stroke: #0275b1;
-        border-bottom: 2px solid #0275b1;
-      }
     }
   }
 }
@@ -46,7 +41,7 @@ input[type="text"] {
   font-style: 1.6rem;
 
   &::placeholder {
-      color: #CECECE;;
+    color: #cecece;
   }
 
   &:focus {
@@ -115,7 +110,6 @@ input[type="text"] {
 }
 
 .dropdown {
-
   &-content {
     display: none;
     position: absolute;
@@ -140,4 +134,21 @@ input[type="text"] {
 
 .navbar__icons--item:hover .dropdown-content {
   display: block;
+}
+
+.visited .svg--icon {
+  color: #0275b1;
+  stroke: #0275b1;
+}
+
+.visited .icon--text {
+  color: #0275b1;
+}
+
+.navbar__icons--item:hover .icon--text {
+  color: #0275b1;
+}
+
+.navbar__icons--item:hover .svg--icon {
+  stroke: #0275b1;
 }

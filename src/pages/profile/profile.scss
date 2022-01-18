@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: 85rem 30rem;
-  
+
   max-width: 1200px;
   margin: 2rem auto 0 auto;
 }
@@ -25,6 +25,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      display: flex;
 
       & > button {
         position: relative;
@@ -144,4 +145,27 @@
       margin-left: 3rem;
     }
   }
+}
+
+.tabs {
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  align-items: flex-end;
+  background-color: transparent;
+
+  &__button {
+    width: 24rem;
+    height: 4rem;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 0.5px solid #e7e7e7;
+  }
+}
+
+.active {
+  border-radius: 4px 4px 0 0;
+  background-color: #0077b5;
+  color: #fff;
+  height: 5rem;
 }

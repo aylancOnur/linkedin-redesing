@@ -1,12 +1,8 @@
-import "./tabs.scss"
-
-const Tabs = () => {
+const Tabs = ({ handleClick, children, active, tab }) => {
   return (
-    <section className="tabs">
-      <button className="tabs__button active">PROFILE</button>
-      <button className="tabs__button">ACTIVITY & INTERESTS</button>
-      <button className="tabs__button">ARTICLES (3)</button>
-    </section>
+    <button onClick={() => handleClick(tab.id)} className={active}>
+      {children}
+    </button>
   );
 };
 
